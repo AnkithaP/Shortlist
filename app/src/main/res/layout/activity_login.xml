@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.aryaan.ankitha.shortlist.LoginActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:background="@layout/button_border"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_marginBottom="3dp"
+        android:textColor="@android:color/black"
+        android:hint="Email"
+        android:id="@+id/emailEditText"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:background="@layout/button_border"
+        android:layout_marginBottom="3dp"
+        android:ems="10"
+        android:id="@+id/passwordEditText"
+        android:layout_below="@+id/emailEditText"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginButton"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="#303F9F"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="userLogin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Forgot Password?"
+        android:textStyle="bold"
+        android:id="@+id/pwdTextView"
+        android:textColor="#303F9F"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
